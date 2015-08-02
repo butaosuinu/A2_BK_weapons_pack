@@ -99,7 +99,18 @@ class cfgWeapons {
 		model = "\bk_weapons_pack\BK_M14EBR.p3d";
 		picture = "";
 		displayName = "M14 EBR-RI";
-		magazines[] = {"20Rnd_762x51_DMR"};
+		class Library
+		{
+			libTextDesc = "";
+		};
+		descriptionShort = "";
+	};
+	class BK_M39EMR : DMR
+	{
+		scope = 2;
+		model = "\bk_weapons_pack\BK_M39EMR.p3d";
+		picture = "";
+		displayName = "M39 EMR";
 		class Library
 		{
 			libTextDesc = "";
@@ -109,3 +120,62 @@ class cfgWeapons {
 };
 
 
+class CfgVehicles {
+
+	class ReammoBox; //Extended
+
+	class BK_US_weaponsbox  : ReammoBox {
+		scope = 2;
+		accuracy = 1000;
+		displayName = "BK US weapons";
+		model = "\ca\weapons\AmmoBoxes\RUBasicAmmo.p3d";
+		
+		class TransportMagazines  {
+			class _xx_Stanag  {
+				magazine = "30Rnd_556x45_Stanag";
+				count = 100;
+			};
+			class _xx_DMR_Mag  {
+				magazine = "20Rnd_762x51_DMR";
+				count = 50;
+			};
+			class _xx_HandGrenade_West  {
+				magazine = "HandGrenade_West";
+				count = 50;
+			};
+			class _xx_SmokeShellRed  {
+				magazine = "SmokeShellRed";
+				count = 2;
+			};
+			class _xx_SmokeShellGreen  {
+				magazine = "SmokeShellGreen";
+				count = 2;
+			};
+			class _xx_SmokeShellYellow  {
+				magazine = "SmokeShellYellow";
+				count = 2;
+			};
+			class _xx_SmokeShell  {
+				magazine = "SmokeShell";
+				count = 5;
+			};
+		};
+		
+		class TransportWeapons  {
+			class _xx_M16A4  {
+				weapon = "M16A4";
+				count = 5;
+			};
+			class _xx_M14EBR
+			{
+				weapon = "BK_M14EBR_RI";
+				count = 5;
+			};
+			class _xx_M39EMR
+			{
+				weapon = "BK_M39EMR";
+				count = 5;
+			};
+		};
+	};
+}:

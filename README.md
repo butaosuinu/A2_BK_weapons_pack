@@ -14,10 +14,12 @@ MBT LAW (NLAW)
 ###Future plans
 T-5000  
 M14EBR  
+M39 EMR  
 AKM  
 AKM Railed Custom model  
 AK-74M  
- with 1P63  
+AK-74M with 1P63  
+MP433  
 56式小銃  
 K2C (K2カービンモデル)  
 M4A1 block2  
